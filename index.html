@@ -1,0 +1,51 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>CoinWpro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets\css\main.css">
+    <link rel="shortcut icon" href="assets\icon\1024px-logo.png" type="image/x-icon">
+    <style>
+        .body_back {
+            width: 100%;
+            height: 100%;
+            background-image: url(assets/images/bg.jpeg);
+            position: fixed;
+            background-size: 100% auto;
+        }
+    </style>
+</head>
+
+<body class="is-preload" onload="disableInfo()">
+    <div class="body_back"></div>
+    <div id="wrapper">
+        <section id="main">
+            <header>
+                <span class="avatar"><img src="assets\images\avatar.png" alt=""></span>
+
+                <h1>CoinWpro</h1>
+                <h1>select list</h1>
+
+                <p>※Contratos de seguro<a href="code\cds.html" target="_blank">click to enter</a></p>
+            </header>
+            <hr>
+            <footer>
+                <p>Contact the author<a href="https://t.me/zaojiashi"><span>Click here</span></a></p>
+            </footer>
+        </section>
+    </div>
+    <script>
+        if ('addEventListener' in window) {
+            window.addEventListener('load', function() {
+                document.body.className = document.body.className.replace(/\bis-preload\b/, '');
+            });
+            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+        }
+    </script>
+    <script src="assets\js\main.js"></script>
+    <script src="assets\js\index.js"></script>
+</body>
+
+</html>
